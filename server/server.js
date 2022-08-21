@@ -15,6 +15,10 @@ app.post('/', (req, res) => {
   res.send(`Heloo ther ${req.body.name}`);
 });
 
+app.get('/greet/:name', (req, res) => {
+  res.send(`Hellot hre bori ${req.params.name}`);
+});
+
 app.listen(PORT, () => {
   console.log('Server started and listening on port ', PORT);
 });

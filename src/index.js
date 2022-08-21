@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // components
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import 404NotFound from './components/404NotFound';
+import NotFound from './components/NotFound';
 
 // pages
 import About from './pages/About';
@@ -28,7 +28,7 @@ root.render(
           <Route path="/about" element={<About />} />
           <Route path="/articles-list" element={<ArticlesList />} />
           <Route path="/article/:name" element={<Article />} />
-          <Route path="*" element={<404NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
